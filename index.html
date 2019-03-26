@@ -1,63 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
-    <script>
-        $(document).on("click", "ul",function() {
-        alert('Coming Soon!');
-    });
-    </script>
-
-   
-
-    <title>Mobile 2</title>
+    <title>My Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/[version]/jquery.mobile-[version].min.css">
+    <script src="https://code.jquery.com/jquery-[version].min.js"></script>
+    <script src="https://code.jquery.com/mobile/[version]/jquery.mobile-[version].min.js"></script>
 </head>
 <body>
+    <!-- SOURCE:  https://learn.jquery.com/jquery-mobile/getting-started/ -->
+    <div data-role="page">
+ 
+        <div data-role="header">
+            <h1>My Title</h1>
+        </div><!-- /header -->
+ 
+        <div role="main" class="ui-content">
+            <p>Hello world</p>
+        </div><!-- /content -->
 
-    <ul id = "tab-bar">
-        <li id = "tab-spots">
-            <a href = "#page-spots">
-                Spots
-            </a>
-        </li>
-        <li id = "tab-sighting">
-            <a href = "#page2">
-                Add a sighting
-            </a>
-        </li>
-        <li id = "tab-stars">
-            <a href = "#page3">
-                tab-stars
-            </a>
-        </li>
-    </ul> <!--#tab-bar-->
+        <ul data-role="listview" data-inset="true" data-filter="true">
+                <li><a href="#">Acura</a></li>
+                <li><a href="#">Audi</a></li>
+                <li><a href="#">BMW</a></li>
+                <li><a href="#">Cadillac</a></li>
+                <li><a href="#">Ferrari</a></li>
+            </ul>
+
+            <form>
+                    <label for="slider-0">Input slider:</label>
+                    <input type="range" name="slider" id="slider-0" value="25" min="0" max="100" />
+                </form>
+
+                <a href="#" data-role="button" data-icon="star">Star button</a>
+
+            <a href="#" data-role="button" data-icon="star" data-theme="a">Button</a>
+        
+            <a href="#" data-role="button" data-icon="star" data-theme="a">Button</a>
 
 
-    <a href = "mailto:feedback@startrackr.com?subject=Complain">Send Complaint</a>
 
-
-    <a href = "tel:1-740-645-0509">Call in a sighting</a>
-
-  
-    <fieldset>
-        <label for = "name">
-            <span>Who</span>
-            <input type = "text" name = "name" placedholder="Star's name"/>
-        </label>
-
-        <label for = "tags">
-            <span>Tags</span>
-            <input type = "text" name="tags" placeholder="Tag your sighting"/>
-        </label>
-
-        </label>
-    </fieldset>
-    
+ 
+        <div data-role="footer">
+            <h4>My Footer</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page -->
 </body>
 </html>
