@@ -1,50 +1,32 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/[version]/jquery.mobile-[version].min.css">
-    <script src="https://code.jquery.com/jquery-[version].min.js"></script>
-    <script src="https://code.jquery.com/mobile/[version]/jquery.mobile-[version].min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <title>Starbrick</title>
 </head>
-<body style = "background-color:   rgba(255, 0, 0, 0.322)"
-    <!-- SOURCE:  https://learn.jquery.com/jquery-mobile/getting-started/ -->
-    <div data-role="page">
- 
-        <div data-role="header">
-            <h1>My Title</h1>
-        </div><!-- /header -->
- 
-        <div role="main" class="ui-content">
-            <p>Hello world</p>
-        </div><!-- /content -->
+<body>
+    <header>Starbrick Sounds</header>
 
-        <ul data-role="listview" data-inset="true" data-filter="true">
-                <li><a href="#">Acura</a></li>
-                <li><a href="#">Audi</a></li>
-                <li><a href="#">BMW</a></li>
-                <li><a href="#">Cadillac</a></li>
-                <li><a href="#">Ferrari</a></li>
-            </ul>
-
-            <form>
-                    <label for="slider-0">Input slider:</label>
-                    <input type="range" name="slider" id="slider-0" value="25" min="0" max="100" />
-                </form>
-
-                <a href="#" data-role="button" data-icon="star">Star button</a>
-
-            <a href="#" data-role="button" data-icon="star" data-theme="a">Button</a>
+    <div class = "search">
+        <label for = "text-basic">Search</label>
+        <input type = "text" name="text" id = "search" value = "">
         
-            <a href="#" data-role="button" data-icon="star" data-theme="a">Button</a>
+    </div>
 
 
+    <div class = "customSets">
+        <form>
+            <input type = "button" data-icon="carat-d" value="left">
+            <input type = "button" data-icon="carat-d" data-iconps="right" value = "Right">
+        </form>
 
- 
-        <div data-role="footer">
-            <h4>My Footer</h4>
-        </div><!-- /footer -->
- 
-    </div><!-- /page -->
+    </div>
+    
 </body>
 </html>
